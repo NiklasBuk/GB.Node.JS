@@ -25,7 +25,7 @@ for (let i = process.argv[2]; i <= process.argv[3]; i++) {
    } 
 }
 
-console.log(primeArr)
+// console.log(primeArr)
 
 if (!primeArr.length) {
    console.log(colors.red('В указанном диапазоне нет простых чисел.'))
@@ -33,13 +33,13 @@ if (!primeArr.length) {
    primeArr.forEach(item => {
       switch (primeArr.indexOf(item) % 3) {
          case 0: 
-            console.log(colors.green(primeArr[item]))
+            console.log(colors.green(item))
             break
          case 1: 
-            console.log(colors.yellow(primeArr[item]))
+            console.log(colors.yellow(item))
             break
          case 2: 
-            console.log(colors.red(primeArr[item]))
+            console.log(colors.red(item))
             break
       }
    })
