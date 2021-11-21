@@ -1,0 +1,22 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "GB_hw",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiklasBuk/GB.Node.JS.git"
+  },
+  "author": "Niklas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NiklasBuk/GB.Node.JS/issues"
+  },
+  "homepage": "https://github.com/NiklasBuk/GB.Node.JS#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
