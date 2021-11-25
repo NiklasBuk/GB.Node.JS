@@ -1,16 +1,19 @@
-console.log(process.argv)
+// console.log('Record 1');
 
-for (let i = process.argv[2]; i <= process.argv[3]; i++) {
-   let flag = 0;
+// setTimeout(() => {
+//   console.log('Record 2');
+//   Promise.resolve().then(() => {
+//     setTimeout(() => {
+//     сonsole.log('Record 3');
+//     Promise.resolve().then(() => {
+//       console.log('Record 4');
+//       });       
+//     });
+//   });       
+// });
 
-   for (let j = 2; j < i; j++) {
-      if (i % j == 0) {
-         flag = 1;
-         break;
-      }
-   }
+// console.log('Record 5');
 
-   if (i > 1 && flag == 0) {
-      console.log(i);
-   }
-}
+// Promise.resolve().then(() => Promise.resolve().then(() => console.log('Record 6')));
+
+//  В первую очередь будет произведен вывод console.log('Record 1'), далее console.log('Record 5'), 
